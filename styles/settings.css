@@ -1,0 +1,281 @@
+.settings-nav {
+    width: 100%;
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .settings-nav {
+        margin-top: 22px;
+        margin-bottom: 13px;
+    }
+}
+
+.settings-nav__back {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    color: var(--color-opacity-black);
+}
+
+.settings-nav__back svg {
+    height: 20px;
+    width: 20px;
+
+    margin-right: 10px;
+}
+
+.settings-nav__back--mob {
+    height: 25px;
+}
+
+.settings-nav__back--mob svg {
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 600px) {
+    .settings-nav__back {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .settings-nav__back--mob {
+        display: none;
+    }
+}
+
+.title--settings {
+    margin-left: 30px;
+
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .title--settings {
+        margin-left: 12px;
+    }
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding-left: 0;
+}
+
+@media (min-width: 600px) {
+    .settings {
+        padding-left: 18vw;
+    }
+}
+
+@media (min-width: 900px) {
+    .settings {
+        padding-left: 260px;
+    }
+}
+
+.settings__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+    color: #414042;
+
+    margin-bottom: 31px;
+
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .settings__link {
+        margin-bottom: 0;
+        padding: 19px 0;
+        border-bottom: 1px solid #EDEDED;
+
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .settings__link:last-child {
+        border-bottom: none;
+    }
+}
+
+.settings__link--red {
+    color: rgba(255, 90, 90, 0.4);
+}
+
+.reg-btn--settings {
+    margin-top: 45px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .reg-btn--settings {
+        display: none;
+    }
+}
+
+.settings__link--submit {
+    color: #FF5A5A;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    border-bottom: none;
+}
+
+.settings__link--submit:disabled {
+    color: rgba(255, 90, 90, 0.4);
+}
+
+@media (max-width: 600px) {
+    .settings__link--submit {
+        margin-bottom: 10px;
+    }
+}
+
+.field {
+    width: 340px;
+}
+
+@media (max-width: 400px) {
+    .field {
+        width: 100%;
+    }
+}
+
+.field .form__field {
+    margin-bottom: 0;
+}
+
+.settings__link--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.warn--mt {
+    margin-top: 5px;
+    width: 100%;
+
+    text-align: right;
+}
+
+.add-greeting {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 60px;
+}
+
+@media (max-width: 600px) {
+    .add-greeting{
+        padding-top: 43px;
+    }
+}
+
+.add-greeting__img {
+    width: 160px;
+
+    margin-bottom: 30px;
+}
+
+.add-greeting__title {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.add-greeting__text {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #414042;
+
+    margin-bottom: 33px;
+    max-width: 243px;
+}
+
+@media (max-width: 400px) {
+    .add-greeting__text {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 400px) {
+    .add-greeting__title {
+        font-size: 14px;
+    }
+
+    .add-greeting__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+.add-greeting__text--guide {
+    max-width: 305px;
+}
+
+@media (max-width: 400px) {
+    .add-greeting__text--guide {
+        width: 200px;
+        line-height: 16px;
+
+        margin-bottom: 25px;
+    }
+}
+
+.add-greeting__text--guide svg {
+    position: relative;
+    top: 2px;
+
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 400px) {
+    .add-greeting__text--guide svg {
+        width: 11px;
+        height: 11px;
+    }
+}
+
+.reg-btn--guide {
+    font-weight: 600;
+
+    padding-top: 0;
+}
+
+@media (min-width: 400px) {
+    .reg-btn--guide {
+        font-size: 16px;
+
+        padding-top: 47px;
+    }
+}

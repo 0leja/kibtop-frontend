@@ -1,0 +1,11 @@
+import AddAdvertPage from "../../components/AddAdvertPage/AddAdvertPage";
+
+const AddAdvert = () => {
+    return (
+        <>
+            <AddAdvertPage />
+        </>
+    );
+}
+
+export default AddAdvert;
