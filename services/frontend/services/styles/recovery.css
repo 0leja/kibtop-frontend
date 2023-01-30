@@ -1,0 +1,137 @@
+.section--recovery {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 61px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+@media (max-width: 600px) {
+    .section--recovery {
+        align-items: flex-start;
+    }
+}
+
+.recovery-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    color: var(--color-black);
+
+    max-width: 240px;
+
+    margin-top: 20px;
+    margin-bottom: 31px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 600px) {
+    .recovery-title {
+        text-align: left;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px;
+
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 600px) {
+    .form--recovery {
+        width: 100%
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-icon--recovery {
+        display: none;
+    }
+}
+
+.form__fields--recovery {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .warn--recovery {
+        margin-bottom: 5px;
+        height: 10px;
+        width: 100%;
+    }
+}
+
+.section--recovery .form__field {
+    margin-bottom: 20px;
+}
+
+.reg-title--rec {
+    margin-bottom: 38px;
+}
+
+@media (max-width: 600px) {
+    .reg-title--rec {
+        max-width: 238px !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .form__fields--rec {
+        margin-bottom: 0;
+    }
+}
+
+
+.form__fields--rec .form__field {
+    margin-bottom: 15px;
+}
+
+.warn--top {
+    position: relative;
+    top: -3px;
+}
+
+@media (min-width: 600px) {
+    .form__bottom {
+        margin-top: 166px;
+    }
+
+    .warn--top {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .warn--bottom {
+        display: none;
+    }
+
+    .greeting__desc--rec {
+        margin-bottom: 25px;
+    }
+
+    .reg-btn--sended {
+        padding: 0;
+        background-color: #fff;
+        color: var(--color-blue);
+    }
+}
+
+.greeting__bottom {
+    margin-top: 115px;
+}
+
+@media (max-width: 600px) {
+    .greeting__bottom {
+        margin-top: 115px;
+    }
+}

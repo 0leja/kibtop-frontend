@@ -1,0 +1,303 @@
+
+:root {
+    --color-black: #414042;
+    --color-white: #ffffff;
+    --color-opacity-black: rgba(65, 64, 66, .6);
+    --color-grey: rgba(65, 64, 66, 0.4);
+    --color-blue: #7AB1FF;
+    --color-yellow: #FFC11E;
+    --color-green: #35D073;
+}
+
+
+
+
+
+body {
+    margin: 0;
+
+    
+
+    overflow-x: hidden;
+
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-black);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+
+    background-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+
+    color: var(--color-black);
+}
+
+textarea {
+    outline: none;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-30 {
+    margin-bottom: 15px;
+}
+
+.btn {
+    box-sizing: border-box;
+
+    background-color: var(--color-blue);
+    color: #fff !important;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1161px;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 80.55%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: var(--color-black);
+}
+
+@media (min-width: 500px) {
+    .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: normal;
+    }
+}
+
+@media (min-width: 1100px) {
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .title {
+        font-size: 32px;
+        line-height: 33px;
+    }
+}
+
+.title--white {
+    color: var(--color-white);
+}
+
+.text {
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: -0.408px;
+}
+
+@media (min-width: 500px) {
+    .text {
+        font-size: 16px;
+        line-height: normal;
+    }
+}
+
+/* 
+@media (min-width: 900px) {
+    .text {
+        font-size: 16px;
+        line-height: normal;
+    }
+} */
+
+@media (min-width: 1100px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+
+.thin-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: right;
+    letter-spacing: -0.5px;
+    color: var(--color-grey);
+}
+
+.more-link-text {
+    text-transform: uppercase;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 2.12677px;
+    color: var(--color-opacity-black)
+}
+
+
+
+@media (min-width: 800px) {
+    .more-link-text {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 2.592px;
+    }
+}
+
+.settings-link-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--color-black);
+}
+
+.desc-link-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-black);
+}
+
+.cost-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: var(--color-black);
+}
+
+.button-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 14px;
+}
+
+.main {
+    min-height: calc(100vh - 120px);
+    max-height: max-content;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+
+    background-color: transparent;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-screen {
+    width: max-content;
+    height: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: calc(50vh - 340px / 2);
+    left: calc(50vw - 760px / 2);
+
+
+    z-index: 30;
+}
+
+.like-icon {
+    width: 21px;
+    height: 19px;
+}
+
+@media (max-width: 600px) {
+    .like-icon {
+        width: 16px;
+        height: 15px;
+    }
+}
+

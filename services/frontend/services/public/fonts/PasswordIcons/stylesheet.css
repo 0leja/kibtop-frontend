@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'password';
+    src: url('./password.eot?2022');
+    src: url('./password.eot?2022#iefix') format('embedded-opentype'),
+         url('./password.woff2?2022') format('woff2'),
+         url('./password.woff?2022') format('woff'),
+         url('./password.ttf?2022') format('truetype'),
+         url('./password.svg?2022#password') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
