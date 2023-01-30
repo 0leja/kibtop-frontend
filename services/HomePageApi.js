@@ -5,7 +5,7 @@ import { serializeAdverts } from './tools/serializers/AdvertsSerializers'
 
 export const HomePageApi = createApi({
     reducerPath: 'homePageApiApi',
-    baseQuery: fetchBaseQuery({ baseUrl: `${BASE_URL}/api/v1/` }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${BASE_URL}/v1/` }),
     tagTypes: ['Slides', 'Recommends', 'News'],
     endpoints: builder => ({
         getSlides: builder.query({

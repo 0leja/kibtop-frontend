@@ -24,7 +24,8 @@ export const serializeSlider = (res, lang) => res.map((product) => ({
 export const GoodsApi = {
     async getRecommends(lang) {
         return await instance.get(`recommend/?limit=8&offset=1&lang=${lang}`)
-                .then(({data}) => {       
+                .then(({data}) => {   
+                    console.log(data);    
                     const language = lang === 'default' ? 'en' : lang        
                     const goods = serializeAdverts(data, language)
                 

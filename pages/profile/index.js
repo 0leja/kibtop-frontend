@@ -16,13 +16,7 @@ export async function getServerSideProps({req, res, locale}) {
 
     const cookies = getStringCookies(req)
 
-    const access = getServerSideCookies(cookies, 'access')
-
-
-    let user = await ProfileApi.getUserData(access)
-                    .catch( err => null)
-
-    if(!user) user = await getServerSideUser(cookies)
+    const user = await getServerSideUser(cookies)
 
     if(!user) {
         return {

@@ -1,7 +1,9 @@
+import CategorySection from "../../../../components/CategoryPage/Category";
+
 const CategoryPage = () => {
     return (
         <>
-            Enter
+            <CategorySection />
         </>
     );
 }

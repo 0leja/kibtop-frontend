@@ -24,7 +24,8 @@ export const AuthApi = {
         return await instance.post('auth/jwt/refresh/',
             {
                 refresh
-            }).then(res => {
+            },).then(res => {
+                console.log(res);
                 return res.data.access
             })
     },

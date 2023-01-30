@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 import { CategoryApi } from "../../services/CategoryApi";
 
 const initialState = {
-    adverts: []
+    adverts: [],
+    pages: []
 }
 
 const CategorySlice = createSlice({
@@ -11,15 +12,18 @@ const CategorySlice = createSlice({
     reducers: {
         setCategoryAdverts(state, {payload}) {
             state.adverts = [...payload]
+        },
+        setCategoryPages(state, {payload}) {
+            state.pages = [...payload]
         }
     }
 })
 
-export const {setCategoryAdverts} = CategorySlice.actions
+export const {setCategoryAdverts, setCategoryPages} = CategorySlice.actions
 
 export const getCategoryAdvertsThunk = (category, lang, page=0) => async dispatch => {
-    const adverts = await CategoryApi.getCategoryAdverts(category, lang, page)
-
+    const {adverts, pages} = await CategoryApi.getCategoryAdverts(category, lang, page)
+    if(pages.length > 0) dispatch(setCategoryPages(pages))
     if(!!adverts) dispatch(setCategoryAdverts(adverts))
 }
 

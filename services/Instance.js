@@ -9,7 +9,7 @@ export const createHeaders = async (accessToken) => {
 
     let user = await instance.get('auth/users/me/', {
         headers: {
-            Authorization: `Bearer ${access}`
+            Authorization: `Bearer ${access}`,
         }
     }).then(({data}) => data).catch(err => null)
 
@@ -30,6 +30,9 @@ export const createHeaders = async (accessToken) => {
 
 export const instance = axios.create({
     baseURL: BASE_URL+'/v1/',
-    withCredentials: false
+    withCredentials: false,
+    headers: {
+        "Accept-Encoding": "*"
+    }
 })
 

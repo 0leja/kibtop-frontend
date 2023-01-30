@@ -3,6 +3,7 @@ import HeaderService from "../Header/HeaderService/HeaderService";
 import LocationContainer from "../HomePage/Recommend/Location/LocationContainer";
 import CategoryNav from "./CategoryNav/CategoryNav";
 import CategoryRouter from "./CategoryRouter/CategoryRouter";
+import PageNavContainer from "./PageNav/PageNavContainer";
 
 const CategorySection = () => {
     return (
@@ -16,6 +17,7 @@ const CategorySection = () => {
                     <LocationContainer />
                 </div>
                 <CategoryRouter />
+                <PageNavContainer />
             </main>
         </>
     );
