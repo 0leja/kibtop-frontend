@@ -12,6 +12,6 @@ services:
       - "443:443"
   frontend:
     container_name: frontend
-    build: .
+    build: ./frontend
     ports:
       - "3000:3000"
